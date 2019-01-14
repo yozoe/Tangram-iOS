@@ -702,7 +702,7 @@
 #pragma mark - 定时器相关
 - (void)startTimer
 {
-    if (self.autoScrollTime > 0.0 && self.itemModels.count > 2) {
+    if (self.autoScrollTime > 0.0 && self.itemModels.count >= 2) {
         if (self.timer) {
             [self.timer fire];
         }
